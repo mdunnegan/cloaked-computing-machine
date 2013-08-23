@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'devise', '3.0.0.rc'
 gem 'rspec' 
 gem 'inherited_resources'
+gem 'simple_form'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "twitter-bootstrap-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
