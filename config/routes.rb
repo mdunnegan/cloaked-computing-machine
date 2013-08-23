@@ -1,5 +1,5 @@
 SoundShare::Application.routes.draw do
-  
+
   root :to => 'posts#index'
   
   devise_for :users
@@ -7,3 +7,4 @@ SoundShare::Application.routes.draw do
   resources :users
 
 end
+ 
