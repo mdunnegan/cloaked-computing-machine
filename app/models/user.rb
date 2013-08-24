@@ -6,5 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :posts
+
+  # rails 4, throwing me a curveball
+  # attr_accessible :first_name, :last_name
   
 end

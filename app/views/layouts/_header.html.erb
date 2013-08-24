@@ -1,0 +1,37 @@
+<div class='navbar navbar-fixed-top'>
+	<div class='navbar-inner'>
+		<div class='container'>
+
+			<a href='/' class='brand'>SoundShare</a>
+
+			<ul class='nav pull-right'>
+
+				<div class="btn-group">
+				    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+				    	<span class="caret"></span>
+				        Users Name
+				    </a>
+
+				    <!--the navbar will be different if nobody is signed in-->
+				    <% if user_signed_in? %>
+				    	
+					    <ul class="dropdown-menu">
+					    	<li>
+					    		<%= link_to 'Add a Song', new_post_path %>
+					    	</li>
+					    	<li>
+					    		<%= link_to 'Edit Account', edit_user_registration_path %>
+					    	</li>
+
+					    	<li>
+					    		<%= link_to 'Log Out', destroy_user_session_path(current_user) %>
+					    	</li>
+					    </ul>
+					<%else%>
+						Not signed in
+					<%end%>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_filter :authenticate_user! # what does this do
+  before_filter :authenticate_user! 
 
   def index
   	@users = User.all

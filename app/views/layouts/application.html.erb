@@ -8,34 +8,9 @@
 </head>
 <body>
 
-  <!-- Abstract into a header partial -->
+	<%= render partial: "layouts/header" %>
 
-  <div class='navbar navbar-fixed-top'>
-  	<div class='navbar-inner'>
-  		<div class='container'>
-
-  			<a href='/posts' class='brand'>SoundShare</a>
-  			<ul class='nav'>
-  				<li> <%=link_to 'First Link', '#' %> </li>
-  			</ul>
-
-  			<ul class='nav pull-right'>
-  				<li> <%=link_to 'Second Link', '#' %> </li>
-  			</ul>
-
-  		</div>
-  	</div>
-  </div>
-
-  <!--second navbar. lol-->
-  
-  <div class='navbar'>
-  	<div class='navbar-inner'>
-  		<div class='container'>
-  		</div>
-  	</div>
-  </div>
-
+	
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   
