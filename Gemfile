@@ -6,6 +6,7 @@ gem 'inherited_resources'
 gem 'simple_form'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "twitter-bootstrap-rails"
+gem "acts_as_follower"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
