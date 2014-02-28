@@ -1,13 +1,9 @@
 class UsersController < ApplicationController
-
+  inherit_resources
   before_filter :authenticate_user! 
 
-  def index
-  	@users = User.all
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:first_name, :last_name) }
   end
-
-  def show
-  	@user = User.find(params[:id])
-  end
-
+  
 end
